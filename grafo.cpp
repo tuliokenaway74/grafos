@@ -12,7 +12,7 @@ int main () {
 
     if (myfile.is_open()){
 
-        linha = 1;
+        linha = 0;
         while (!myfile.eof()) {
             myfile >> line;
             myfile >> line;
