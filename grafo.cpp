@@ -30,19 +30,19 @@ int main () {
     int y[linha];
 
 
-myfile.open("Grafo.txt");
+    myfile.open("Grafo.txt");
 
-while (!myfile.eof()) {
-            myfile >> line;
+    while (!myfile.eof()) {
+        myfile >> line;
 
-            myfile >> line;
-            x[i] = stoi(line); 
+        myfile >> line;
+        x[i] = stoi(line); 
             
-            myfile >> line;
-            y[i] = stoi(line); 
-            linha++;
-            i++;
-        }
+        myfile >> line;
+        y[i] = stoi(line); 
+        linha++;
+        i++;
+    }
 
     myfile.close();
 
