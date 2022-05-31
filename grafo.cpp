@@ -15,8 +15,8 @@ int main () {
         linha = 0;
         while (!myfile.eof()) {
             myfile >> line;
-            myfile >> line; //
-            myfile >> line; //
+            myfile >> line;
+            myfile >> line;
             linha++;
         }
 
@@ -27,7 +27,6 @@ int main () {
 
     int x[linha];
     int y[linha];
-
 
     myfile.open("Grafo.txt");
 
