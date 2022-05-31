@@ -2,17 +2,16 @@
 #include <fstream>
 
 using namespace std;
+int linha = 0;
+int i;
 
 int main () {
     string line;
-    int linha;
-    int i;
 
     ifstream myfile ("Grafo.txt");
 
     if (myfile.is_open()){
 
-        linha = 0;
         while (!myfile.eof()) {
             myfile >> line;
             myfile >> line;
@@ -38,15 +37,14 @@ int main () {
             
         myfile >> line;
         y[i] = stoi(line); 
-        linha++;
         i++;
     }
 
     myfile.close();
 
-    for(i=0; i < linha; i++) {
+    for(i=0; i<linha; i++) {
         cout << x[i] << "  " << y[i] << endl;
     }
-
+    
     return 0;
 }
